@@ -1,10 +1,14 @@
+import os
+
 def main():
     x = 9 + 6
     y = 5 + 9
     z = x + y
     phrase = "Hello World!"
     print(phrase.replace("Hello", "Hi"))
-    print(z)
+    print(z, '\n')
+
+    os.system("pause")
 
     return 1
 
