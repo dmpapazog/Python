@@ -18,10 +18,10 @@ def quickSort(pinakas):
     return pinakas
 
 def printArray(pinakas):
-    print("[ ", end='')
+    print("[", end='')
     for i in range(len(pinakas) - 1):
-        print("%2d" % pinakas[i], end=", ")
-    print(pinakas[len(pinakas) - 1], "]", end='\n')
+        print("%3d"%pinakas[i], end=",")
+    print("%3d]"%pinakas[len(pinakas)-1])
 
 
 def init_array(n):
@@ -38,7 +38,8 @@ def main():
     printArray(pinakas)
 
     pinakas = quickSort(pinakas)
-    print("O neos pinakas:")
+    space = ' '
+    print("O neos pinakas." + (2 * space), end = '')
     printArray(pinakas)
 
 

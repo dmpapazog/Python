@@ -13,7 +13,8 @@ def main():
     print_array(pinakas, SIZE)
 
     pinakas = bubble_sort(pinakas, SIZE)
-    print("O neos pinakas.")
+    space = ' '
+    print("O neos pinakas." + '\n' + (10 * space), end = '')
     print_array(pinakas, SIZE)
 
     print()
@@ -23,11 +24,10 @@ def main():
 
 
 def print_array(pinakas, n):
-    print("[ ", end='')
+    print("[", end='')
     for i in range(n - 1):
-        print("%3d"%pinakas[i], end=", ")
-    print(pinakas[n-1], "]", end='\n')
-
+        print("%3d"%pinakas[i], end=",")
+    print("%3d]"%pinakas[n-1])
 
 def bubble_sort(pinakas, n):
     for i in range(n):
